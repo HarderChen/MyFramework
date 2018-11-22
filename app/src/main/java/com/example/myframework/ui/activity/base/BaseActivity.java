@@ -1,6 +1,5 @@
 package com.example.myframework.ui.activity.base;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.CallSuper;
 import android.support.annotation.LayoutRes;
@@ -11,7 +10,7 @@ import android.view.Display;
 import android.view.WindowManager;
 
 import com.example.myframework.AppData;
-import com.example.myframework.mvc.contract.base.IBaseContract;
+import com.example.myframework.mvc.contract.base.BaseContract;
 import com.example.myframework.util.WindowUtil;
 import com.thirtydegreesray.dataautoaccess.DataAutoAccess;
 import com.thirtydegreesray.dataautoaccess.annotation.AutoAccess;
@@ -22,7 +21,7 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2018/11/2 0002.
  */
 
-public abstract class BaseActivity<P extends IBaseContract.Presenter> extends AppCompatActivity implements IBaseContract.View {
+public abstract class BaseActivity<P extends BaseContract.Presenter> extends AppCompatActivity implements BaseContract.View {
 
     protected P mPresenter;
     private static BaseActivity curActivity;
@@ -76,20 +75,6 @@ public abstract class BaseActivity<P extends IBaseContract.Presenter> extends Ap
 
     }
 
-    @Override
-    public void showProgressDialog() {
-
-    }
-
-    @Override
-    public void diamissProgressDialog() {
-
-    }
-
-    @Override
-    public ProgressDialog getProgressDialog() {
-        return null;
-    }
 
     @Override
     public void showInfoToast(String message) {

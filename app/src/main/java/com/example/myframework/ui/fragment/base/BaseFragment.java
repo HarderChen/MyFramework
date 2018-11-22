@@ -11,7 +11,6 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
@@ -22,9 +21,8 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.example.myframework.AppApplication;
-import com.example.myframework.R;
 import com.example.myframework.inject.component.AppComponent;
-import com.example.myframework.mvc.contract.base.IBaseContract;
+import com.example.myframework.mvc.contract.base.BaseContract;
 import com.example.myframework.ui.activity.LoginActivity;
 import com.thirtydegreesray.dataautoaccess.DataAutoAccess;
 
@@ -35,7 +33,7 @@ import butterknife.Unbinder;
 import es.dmoral.toasty.Toasty;
 
 
-public abstract class BaseFragment<P extends IBaseContract.Presenter> extends Fragment implements IBaseContract.View {
+public abstract class BaseFragment<P extends BaseContract.Presenter> extends Fragment implements BaseContract.View {
 
     private final String TAG = BaseFragment.class.getSimpleName();
 

@@ -11,8 +11,12 @@ public class HttpSubscriber<T> extends Subscriber<Response<T>> {
 
     private HTTPObserver<T> mObserver;
 
+
     public HttpSubscriber( HTTPObserver<T> mObserver) {
         this.mObserver = mObserver;
+    }
+
+    public HttpSubscriber() {
     }
 
     @Override

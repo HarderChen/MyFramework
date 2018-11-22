@@ -11,7 +11,7 @@ import android.support.annotation.Nullable;
  * Created by Administrator on 2018/11/2 0002.
  */
 
-public interface IBaseContract {
+public interface BaseContract {
     interface View{
         void showProgressDialog(String content);
 
@@ -42,7 +42,7 @@ public interface IBaseContract {
 
     }
 
-    interface Presenter<V extends IBaseContract.View>{
+    interface Presenter<V extends BaseContract.View>{
         void onSaveInstanceState(Bundle outState);
         void onRestoreInstanceState(Bundle outState);
         void attachView(@NonNull V view);

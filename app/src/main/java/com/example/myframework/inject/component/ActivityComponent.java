@@ -12,7 +12,7 @@ import dagger.Component;
  * Created by 陈行 on 2018/11/16 0016.
  */
 @ActivityScope
-@Component(modules = ActivityModule.class , dependencies = AppModule.class)
+@Component(modules = ActivityModule.class , dependencies = AppComponent.class)
 public interface ActivityComponent {
     void inject(LoginActivity activity);
     void inject(MainActivity activity);

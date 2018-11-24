@@ -13,6 +13,7 @@ import android.support.annotation.Nullable;
 
 public interface BaseContract {
     interface View{
+
         void showProgressDialog(String content);
 
         void dismissProgressDialog();
@@ -21,8 +22,8 @@ public interface BaseContract {
 
         void showTipDialog(String content);
 
-        void showConfirmDialog(String msn, String title, String confirmText
-                , DialogInterface.OnClickListener confirmListener);
+        void showConfirmDialog(String msn, String title, String confirmText, DialogInterface.OnClickListener confirmListener);
+
 
         void showToast(String message);
 
@@ -37,6 +38,7 @@ public interface BaseContract {
         void showLoading();
 
         void hideLoading();
+
 
         void showLoginPage();
 

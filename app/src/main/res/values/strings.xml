@@ -14,4 +14,15 @@
     <string name="title_draw_path">drawPath()</string>
     <string name="title_draw_histogram">直方图</string>
     <string name="title_draw_pie_chart">饼图</string>
+    <string name="loading">loading</string>
+    <string name="success_copied">copy success</string>
+    <string name="no_network_tip">Loading data from GitHub failed. Please check your network connection and retry.</string>
+    <string name="load_timeout_tip">Loading data from GitHub timed out. Please check your network connection and retry.</string>
+    <string name="user_name_warning">Invalid username!</string>
+    <string name="password_warning">Invalid password!</string>
+
+    <string name="no_cache_and_network">Network and cache is unavailable.</string>
+    <string name="page_no_found">Page not found.</string>
+    <string name="unauthorized">Unauthorized.</string>
+
 </resources>

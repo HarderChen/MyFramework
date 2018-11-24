@@ -9,10 +9,10 @@ import rx.Subscriber;
 
 public class HttpSubscriber<T> extends Subscriber<Response<T>> {
 
-    private HTTPObserver<T> mObserver;
+    private HttpObserver<T> mObserver;
 
 
-    public HttpSubscriber( HTTPObserver<T> mObserver) {
+    public HttpSubscriber( HttpObserver<T> mObserver) {
         this.mObserver = mObserver;
     }
 

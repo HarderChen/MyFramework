@@ -112,14 +112,14 @@ public class AppUtils {
         return resources.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
     }
 
+    public static void showKeyboard(@NonNull View v) {
+        showKeyboard(v, v.getContext());
+    }
+
     @SuppressWarnings("WeakerAccess")
     public static void showKeyboard(@NonNull View v, @NonNull Context activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(v, 0);
-    }
-
-    public static void showKeyboard(@NonNull View v) {
-        showKeyboard(v, v.getContext());
     }
 
     public static void hideKeyboard(@NonNull View view) {

@@ -72,7 +72,7 @@ public class FileUtil {
     }
 
     /**
-     * 检查内部存储是否可用
+     * 检查外部存储区是否可用
      * @return
      */
     public static boolean isExternalStorageEnable() {

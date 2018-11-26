@@ -1,5 +1,3 @@
-
-
 package com.example.myframework.util;
 
 import android.content.Context;

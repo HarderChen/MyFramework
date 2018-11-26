@@ -188,10 +188,12 @@ public abstract class BaseActivity<P extends BaseContract.Presenter> extends App
     protected BaseActivity getActivity() {
         return this;
     }
+
     @CallSuper
     protected void initActivity(){
 
     }
+
     protected void intoFullScreen() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);

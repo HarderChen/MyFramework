@@ -1,5 +1,3 @@
-
-
 package com.example.myframework.util;
 
 import android.content.Context;
@@ -73,6 +71,14 @@ public class PrefUtils {
 
     public static SharedPreferences getDefaultSp(){
         return PreferenceManager.getDefaultSharedPreferences(AppApplication.get());
+    }
+
+    public static SharedPreferences getDefaultSp(Context context){
+        return PreferenceManager.getDefaultSharedPreferences(context);
+    }
+
+    public static SharedPreferences getSP(Context context, String spName){
+        return context.getSharedPreferences(spName, Context.MODE_PRIVATE);
     }
 
     public static void set(@NonNull String key, @NonNull Object value) {
@@ -204,14 +210,6 @@ public class PrefUtils {
 
     public static boolean isnewYearWishesTipEnable(){
         return getDefaultSp(AppApplication.get()).getBoolean(NEW_YEAR_WISHES_TIP_ENABLE, true);
-    }
-
-    public static SharedPreferences getDefaultSp(Context context){
-        return PreferenceManager.getDefaultSharedPreferences(context);
-    }
-
-    public static SharedPreferences getSP(Context context, String spName){
-        return context.getSharedPreferences(spName, Context.MODE_PRIVATE);
     }
 
 }

@@ -99,7 +99,7 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Base
 
     protected LoginService getLoginService(String token) {
         return AppRetrofit.INSTANCE
-                .getRetrofit(AppConfig.GITHUB_API_BASE_URL, token)
+                .getRetrofit(AppConfig.BASE_URL, token)
                 .create(LoginService.class);
     }
 
@@ -133,7 +133,7 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Base
 
     protected UserService getUserService(String token) {
         return AppRetrofit.INSTANCE
-                .getRetrofit(AppConfig.GITHUB_API_BASE_URL, token)
+                .getRetrofit(AppConfig.BASE_URL, token)
                 .create(UserService.class);
     }
 

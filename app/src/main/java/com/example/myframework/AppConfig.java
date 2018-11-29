@@ -10,4 +10,6 @@ public class AppConfig {
 
     public final static int HTTP_MAX_CACHE_SIZE = 32 * 1024 * 1024;
 
+    public final static String BASE_URL = "https://www.baidu.com";
+
 }

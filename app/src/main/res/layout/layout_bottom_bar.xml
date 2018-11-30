@@ -5,13 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_alignParentBottom="true"
     android:orientation="horizontal">
-    <android.support.design.widget.BottomNavigationView
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:itemIconTint="@drawable/my_tab_color"
-        app:itemTextColor="@drawable/my_tab_color"
-        app:menu="@menu/bottom_navigation_menu">
-
-    </android.support.design.widget.BottomNavigationView>
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </LinearLayout>

@@ -2,22 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/tab_home"
-        android:icon="@drawable/ic_home"
         android:title="Home"/>
     <item
         android:id="@+id/tab_listen"
-        android:icon="@drawable/ic_listen"
         android:title="Listen" />
     <item
         android:id="@+id/tab_play"
-        android:icon="@drawable/ic_play"
-        android:title="" />
+        android:title="play" />
     <item
         android:id="@+id/tab_discovery"
-        android:icon="@drawable/ic_discover"
         android:title="Discovery" />
     <item
         android:id="@+id/tab_account"
-        android:icon="@drawable/ic_account"
         android:title="Account" />
 </menu>

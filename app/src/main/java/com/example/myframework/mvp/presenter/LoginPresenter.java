@@ -1,4 +1,4 @@
-package com.example.myframework.mvc.presenter;
+package com.example.myframework.mvp.presenter;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,12 +9,10 @@ import com.example.myframework.http.core.HttpObserver;
 import com.example.myframework.http.core.HttpResponse;
 import com.example.myframework.http.core.HttpSubscriber;
 import com.example.myframework.http.model.AuthRequestModel;
-import com.example.myframework.mvc.contract.LoginContract;
-import com.example.myframework.mvc.model.BasicToken;
-import com.example.myframework.mvc.model.OauthToken;
-import com.example.myframework.mvc.model.User;
-
-import java.util.Date;
+import com.example.myframework.mvp.contract.LoginContract;
+import com.example.myframework.mvp.model.BasicToken;
+import com.example.myframework.mvp.model.OauthToken;
+import com.example.myframework.mvp.model.User;
 
 import javax.inject.Inject;
 

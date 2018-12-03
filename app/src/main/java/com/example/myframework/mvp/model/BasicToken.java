@@ -1,4 +1,4 @@
-package com.example.myframework.mvc.model;
+package com.example.myframework.mvp.model;
 
 import java.util.Arrays;
 import java.util.Date;

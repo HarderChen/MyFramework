@@ -1,11 +1,8 @@
 package com.example.myframework.ui.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.example.myframework.R;
 import com.example.myframework.inject.component.AppComponent;
-import com.example.myframework.mvc.presenter.SplashPresenter;
+import com.example.myframework.mvp.presenter.SplashPresenter;
 import com.example.myframework.ui.activity.base.BaseActivity;
 
 public class SplashActivity extends BaseActivity<SplashPresenter> {

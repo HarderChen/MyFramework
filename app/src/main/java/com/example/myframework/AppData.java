@@ -1,7 +1,7 @@
 package com.example.myframework;
 
 import com.example.myframework.dao.AuthUser;
-import com.example.myframework.mvc.model.User;
+import com.example.myframework.mvp.model.User;
 import com.thirtydegreesray.dataautoaccess.annotation.AutoAccess;
 
 public enum AppData {

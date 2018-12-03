@@ -16,7 +16,7 @@ import com.example.myframework.AppApplication;
 import com.example.myframework.AppData;
 import com.example.myframework.dao.DaoSession;
 import com.example.myframework.inject.component.AppComponent;
-import com.example.myframework.mvc.contract.base.BaseContract;
+import com.example.myframework.mvp.contract.base.BaseContract;
 import com.example.myframework.util.WindowUtil;
 import com.thirtydegreesray.dataautoaccess.DataAutoAccess;
 import com.thirtydegreesray.dataautoaccess.annotation.AutoAccess;

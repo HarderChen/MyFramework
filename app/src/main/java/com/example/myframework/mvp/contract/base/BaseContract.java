@@ -1,4 +1,4 @@
-package com.example.myframework.mvc.contract.base;
+package com.example.myframework.mvp.contract.base;
 
 import android.app.ProgressDialog;
 import android.content.Context;

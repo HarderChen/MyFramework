@@ -1,4 +1,4 @@
-package com.example.myframework.mvc.presenter;
+package com.example.myframework.mvp.presenter;
 
 import com.example.myframework.AppData;
 import com.example.myframework.dao.AuthUser;
@@ -6,8 +6,8 @@ import com.example.myframework.dao.AuthUserDao;
 import com.example.myframework.dao.DaoSession;
 import com.example.myframework.http.core.HttpObserver;
 import com.example.myframework.http.core.HttpResponse;
-import com.example.myframework.mvc.contract.SplashContract;
-import com.example.myframework.mvc.model.User;
+import com.example.myframework.mvp.contract.SplashContract;
+import com.example.myframework.mvp.model.User;
 
 import java.util.List;
 

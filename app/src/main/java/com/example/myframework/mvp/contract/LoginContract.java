@@ -1,9 +1,9 @@
-package com.example.myframework.mvc.contract;
+package com.example.myframework.mvp.contract;
 
 import android.content.Intent;
 
-import com.example.myframework.mvc.contract.base.BaseContract;
-import com.example.myframework.mvc.model.BasicToken;
+import com.example.myframework.mvp.contract.base.BaseContract;
+import com.example.myframework.mvp.model.BasicToken;
 
 /**
  * Created by Administrator on 2018/11/2 0002.

@@ -5,7 +5,7 @@ package com.example.myframework.http;
 import android.support.annotation.NonNull;
 
 
-import com.example.myframework.mvc.model.User;
+import com.example.myframework.mvp.model.User;
 
 import java.util.ArrayList;
 

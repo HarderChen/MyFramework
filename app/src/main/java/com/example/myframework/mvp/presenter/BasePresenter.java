@@ -1,4 +1,4 @@
-package com.example.myframework.mvc.presenter;
+package com.example.myframework.mvp.presenter;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
-import android.view.View;
 
 import com.example.myframework.AppConfig;
 import com.example.myframework.AppData;
@@ -23,7 +22,7 @@ import com.example.myframework.http.error.HttpError;
 import com.example.myframework.http.error.HttpErrorCode;
 import com.example.myframework.http.error.HttpPageNoFoundError;
 import com.example.myframework.http.error.UnauthorizedError;
-import com.example.myframework.mvc.contract.base.BaseContract;
+import com.example.myframework.mvp.contract.base.BaseContract;
 import com.example.myframework.util.NetHelper;
 import com.example.myframework.util.PrefUtils;
 import com.example.myframework.util.StringUtils;

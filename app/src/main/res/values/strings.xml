@@ -6,7 +6,6 @@
     <string name="account">账号</string>
 
 
-
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="loading">loading</string>
@@ -19,5 +18,11 @@
     <string name="no_cache_and_network">Network and cache is unavailable.</string>
     <string name="page_no_found">Page not found.</string>
     <string name="unauthorized">Unauthorized.</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

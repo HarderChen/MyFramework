@@ -30,5 +30,6 @@
     <dimen name="card_view_horizontal_margin">8dp</dimen>
     <dimen name="card_view_vertical_margin">4dp</dimen>
     <dimen name="card_view_corner_radius">2dp</dimen>
+    <dimen name="actionBarSize">50dp</dimen>
 
 </resources>

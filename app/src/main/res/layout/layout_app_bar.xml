@@ -3,13 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/app_bar"
+    android:theme="?appbar_theme"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?actionBarSize"
+        app:title="framework"
+        app:popupTheme="?attr/popup_theme">
     </android.support.v7.widget.Toolbar>
 
     <android.support.design.widget.TabLayout

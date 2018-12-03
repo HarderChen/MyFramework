@@ -1,6 +1,6 @@
-package com.example.myframework.mvc.contract;
+package com.example.myframework.mvp.contract;
 
-import com.example.myframework.mvc.contract.base.BaseContract;
+import com.example.myframework.mvp.contract.base.BaseContract;
 
 /**
  * Created by 陈行 on 2018/11/26 0026.

@@ -3,33 +3,13 @@
 package com.example.myframework.util;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.VectorDrawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.text.SpannableStringBuilder;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.SubMenu;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.myframework.R;
-import com.example.myframework.mvc.model.Label;
-import com.example.myframework.ui.widget.IssueLabelSpan;
-
-import java.util.ArrayList;
 
 
 public class ViewUtils {

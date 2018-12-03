@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.text.style.ReplacementSpan;
 
 import com.example.myframework.R;
-import com.example.myframework.mvc.model.Label;
+import com.example.myframework.mvp.model.Label;
 import com.example.myframework.util.ViewUtils;
 
 /**

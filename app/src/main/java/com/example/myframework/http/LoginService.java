@@ -3,8 +3,8 @@ package com.example.myframework.http;
 import android.support.annotation.NonNull;
 
 import com.example.myframework.http.model.AuthRequestModel;
-import com.example.myframework.mvc.model.BasicToken;
-import com.example.myframework.mvc.model.OauthToken;
+import com.example.myframework.mvp.model.BasicToken;
+import com.example.myframework.mvp.model.OauthToken;
 
 import retrofit2.Response;
 import retrofit2.http.Body;

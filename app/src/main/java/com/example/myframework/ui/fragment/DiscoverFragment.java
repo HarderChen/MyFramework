@@ -12,10 +12,10 @@ import com.example.myframework.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DiscoveryFragment extends Fragment {
+public class DiscoverFragment extends Fragment {
 
 
-    public DiscoveryFragment() {
+    public DiscoverFragment() {
         // Required empty public constructor
     }
 

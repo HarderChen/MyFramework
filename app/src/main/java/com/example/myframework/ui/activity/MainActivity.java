@@ -1,6 +1,7 @@
 package com.example.myframework.ui.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -9,8 +10,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.example.myframework.R;
+import com.example.myframework.ui.fragment.AccountFragment;
+import com.example.myframework.ui.fragment.DiscoverFragment;
+import com.example.myframework.ui.fragment.HomeFragment;
+import com.example.myframework.ui.fragment.ListenFragment;
+import com.example.myframework.ui.fragment.PlayFragment;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import java.util.ArrayList;
@@ -30,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;
     @BindView(R.id.view_pager)
     ViewPager mViewPager;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
 
     List<Fragment>fragments = new ArrayList<>();
 
@@ -39,20 +48,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
+        tabLayout.setVisibility(View.GONE);
        // bnve.enableAnimation(false);
         bnve.enableShiftingMode(false);
         bnve.enableItemShiftingMode(false);
         bnve.setTextSize(10);
 
+        fragments.add(new HomeFragment());
+        fragments.add(new ListenFragment());
+        fragments.add(new PlayFragment());
+        fragments.add(new DiscoverFragment());
+        fragments.add(new AccountFragment());
+
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return null;
+                return fragments.get(position);
             }
 
             @Override
             public int getCount() {
-                return 0;
+                return fragments == null ? 0 : fragments.size();
             }
         });
         bnve.setupWithViewPager(mViewPager,true);

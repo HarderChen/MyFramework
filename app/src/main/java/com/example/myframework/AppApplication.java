@@ -19,6 +19,7 @@ public class AppApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        application = this;
         appComponent = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();

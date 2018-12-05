@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         bnve.enableItemShiftingMode(false);
         bnve.setTextSize(10);
 
-        mViewPager.setAdapter(new FragmentPagerAdapter() {
+        mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
                 return null;
